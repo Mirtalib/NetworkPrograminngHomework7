@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,14 +16,17 @@ using System.Windows.Shapes;
 
 namespace Client
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            /// var enumType = Enum.GetNames(typeof());
+            /// 
+            /// foreach (var item in enumType)
+            ///     cmboxCommandName.Items.Add(item);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -13,7 +13,11 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
-        
+        <ComboBox Name="cmboxCommandName" 
+                  Width="200"
+                  Height="30" 
+                  SelectionChanged="cmboxCommandName_SelectionChanged"/>
+
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
