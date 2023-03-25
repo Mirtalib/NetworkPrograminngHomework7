@@ -33,5 +33,10 @@ namespace Client
         {
 
         }
+
+        private void cmboxCommandName_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

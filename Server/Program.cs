@@ -15,10 +15,31 @@ while (true)
     var request = context.Request;
     var response = context.Response;
 
-    
 
-    var writer = new StreamWriter(response.OutputStream);
+
+
+    switch (request.HttpMethod)
+    {
+        case "GET":
+            {
+
+                break;
+            }
+        case "POST":
+            {
+
+                break;
+            }
+        case "PUT":
+            {
+
+                break;
+            }
+        default:
+            break;
+    }
     
+    // var writer = new StreamWriter(response.OutputStream);
     // await writer.Write(,)  
 }
 
