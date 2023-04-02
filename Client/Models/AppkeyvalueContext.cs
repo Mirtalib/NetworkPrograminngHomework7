@@ -15,14 +15,14 @@ public partial class AppkeyvalueContext : DbContext
     {
     }
 
-    public virtual DbSet<Keyvalue> Keyvalues { get; set; }
+    public virtual DbSet<KeyValue> Keyvalues { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=APPKEYVALUE;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Keyvalue>(entity =>
+        modelBuilder.Entity<KeyValue>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__KEYVALUE__3214EC07D7B5B10E");
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Client.Models;
 
-public partial class Keyvalue
+public partial class KeyValue
 {
     public int Id { get; set; }
 
